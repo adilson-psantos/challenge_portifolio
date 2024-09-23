@@ -1,0 +1,18 @@
+body {
+    background-color:white;
+    color: black;
+}
+
+
+
+
+
+    
+<footer class="rodape__menu">
+<a href="https://www.linkedin.com/in/adilsonpsantos/" target="_blank">Linkedin</a>
+    <img src="/img/linkedin.png" alt="Linkedin" class="footer-icon">
+<a href="https://github.com/adilson-psantos">Github</a>
+    <img src="/img/github.png" alt="Github" class="footer-icon">
+<a href="https://instagram.com/diperssan">Instagram</a>
+    <img src="/img/instagram.png" alt="Instagram" class="footer-icon">
+</footer>
