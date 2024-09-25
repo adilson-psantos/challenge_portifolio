@@ -59,6 +59,35 @@
 /*------------------------------ Seção de Contato ---------------------------------*/
 
 
+
+/*------------------------------ Seção de Rodapé-----------------------------------*/
+
+.redes {
+    text-align: center;
+    padding: 5px;
+    background-color: rgba(140, 187, 214, 0.7);
+    color: rgb(15, 15, 15);
+    width: 100%;
+    font-size: 0.9em;
+}
+.redes__titulo {
+    color: #fff;
+    text-decoration: none;
+}
+
+.redes__icon {
+    width: 30px; /* Tamanho dos ícones */
+    height: 30px;
+    margin: 0 10px;
+    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
+}
+
+.redes__titulo:hover {
+    opacity: 0.8; /* Efeito hover para ícones */
+}
+
+
+
 /* ------------------------------ Responsividade ---------------------------------------*/
 
 /* Tablets e telas maiores */
