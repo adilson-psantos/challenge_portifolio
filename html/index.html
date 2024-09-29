@@ -1,189 +1,198 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/css/reset.css">
-    <link rel="stylesheet" href="/css/style.css">
-    <title>Portifólio</title>
+    <title>Adilson Pereira dos Santos</title>
+	<link rel="stylesheet" href="/css/reset.css">
+	<link rel="stylesheet" href="/css/style.css">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+	<script src="script.js"></script>
 </head>
-<body>    
-    <!--menu-->
+<body data-theme="light">
+    <!--Cabeçalho | Menu-->
     <header class="cabecalho">
-        <img class="cabecalho__logo" src="/assets/vector.png" alt="Avatar dipersan">
-        <h1 class="cabecalho__titulo">Adilson Pereira dos Santos</h1>
-        <nav class="navegacao">
-            <ul class="navegacao__lista">
-                <li class="navegacao__elemento"><a href="#sobre-mim">Sobre mim</a></li>
-                <li class="navegacao__elemento"><a href="#habilidades">Habilidades</a></li>
-                <li class="navegacao__elemento"><a href="#formacao">Formação</a></li>
-                <li class="navegacao__elemento"><a href="#projetos">Projetos</a></li>
-                <li class="navegacao__elemento"><a href="#contato">Contato</a></li>
+        <img id="theme-toggle" src="/assets/img/eclipse.png" alt="Alternar Tema" aria-label="Alternar Tema" class="theme-toggle">
+        <h1 class="cabecalho__titulo">Meu Portifólio</h1>
+        <nav class="cabecalho__navegacao" role="navigation" aria-label="Menu Principal">
+            <ul class="cabecalho__menu">
+                <li class="cabecalho__item"><a href="#sobre">Sobre mim</a></li>
+                <li class="cabecalho__item"><a href="#habilidades">Habilidades</a></li>
+                <li class="cabecalho__item"><a href="#lazer">Lazer</a></li>
+                <li class="cabecalho__item"><a href="#formacao">Formacao</a></li>
+				<li class="cabecalho__item"><a href="#projetos">Projetos</a></li>
+                <li class="cabecalho__item"><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
 
+    <!--Apresentação-->
+    <main class="container">
+        <section class="apresentacao" id="apresentacao">
+            <img class="apresentacao__foto" src="/assets/img/adilson.png" alt="Foto de Adilson Pereira dos Santos">
+            <div class="apresentacao__container">
+                <h2 class="apresentacao__titulo">Olá! Eu sou Adilson Pereira dos Santos, um estudante de front-end apaixonado por criar interfaces acessíveis e intuitivas</h2>
+                <p class="apresentacao__texto">Sou formado em Análise de Sistemas e gosto de criar páginas Web no tempo livre</p>
+            </div>
+        </section>
 
-    <!--Seção de Apresentação-->
-    <section class="apresentacao">
-        <img class="apresentacao__foto" src="/assets/dipersan_03.jpg" alt="Foto Perfil">
-        <div class="apresentacao__container">
-            <h2 class="apresentacao__titulo"> Olá meu nome é Adilson Pereira dos Santos e sou entusiasta e estudande de Front End com foco em Html, CSS e JavaScript</h2>
-            <p class="apresentacao__subtitulo">Sou formado em Sistemas da Informação desde 2006 e atualmente estou participando do projeto Oracle One na Alura Latam.</p>
-    </section>
+    <!--Sobre mim-->
+        <section class="sobre" id="sobre">
+            <h2 class="sobre__titulo">Sobre</h2>
+            <p class="sobre__texto">Olá! Eu sou Adilson Pereira dos Santos, estudante aspirante a desenvolvedor Front-End, sou  apaixonado programação, acho incrivél poder criar paginas com designs que chamem a atenção das pessoaas. Estudo para me desenvolver e poder criar minhas paginas com interfaces acessíveis e intuitivas e colocar minhas idéias, estudos na Internet para outras pessoas que queiram aprender e se desenvolver..</p>
+        </section>
 
+    <!--Habilidades-->
+		<div class="habilidades__container"> <!--acrescentado uma classe div para colocar lado a lado as habilidades-->
+			<section class="habilidades" id="habilidades-html">
+				<h2 class="habilidades__titulo">Html5</h2>
+				<ul class="habilidades__lista">
+					<li class="habilidades__item">
+						<img src="assets/sun-icon.jpg" alt="Ícone representando HTML5" class="habilidades__icone">
+						<p class="habilidades__nome">HTML5</p>
+					</li>
+				</ul>
+			</section>
+			<section class="habilidades" id="habilidades-css">
+				<h2 class="habilidades__titulo">CSS</h2>
+				<ul class="habilidades__lista">
+					<li class="habilidades__item">
+						<img src="assets/sun-icon.jpg" alt="Ícone representando CSS" class="habilidades__icone">
+						<p class="habilidades__nome">CSS</p>
+					</li>
+				</ul>
+			</section>	
+			<section class="habilidades" id="habilidades-js">
+				<h2 class="habilidades__titulo">Java Script</h2>
+				<ul class="habilidades__lista">
+					<li class="habilidades__item">
+						<img src="assets/sun-icon.jpg" alt="Ícone representando Java Script" class="habilidades__icone">
+						<p class="habilidades__nome">JavaScript</p>
+					</li>
+				</ul>
+			</section>	
+			<section class="habilidades" id="habilidades-ms">
+				<h2 class="habilidades__titulo">Microsoft</h2>
+				<ul class="habilidades__lista">
+					<li class="habilidades__item">
+						<img src="assets/sun-icon.jpg" alt="Ícone representando Microsoft AZ900|AI900" class="habilidades__icone">
+						<p class="habilidades__nome">Microsoft</p>
+					</li>
+				</ul>
+			</section>
+		</div>
+    <!--Lazer-->
+		<div class="lazer__container"> <!--Acrescentando uma classe div para colocar -->
+			<section class="lazer" id="lazer-guitar">
+				<h2 class="lazer__titulo">Lazer</h2>
+				<ul class="lazer__lista">
+					<li class="lazer__item">
+						<img src="sun-icon.jpg" alt="Ícone representando uma guitarra" class="lazer__icone">
+						<p class="lazer__nome">Música</p>
+					</li>
+				</ul>
+			</section>
+			<section class="lazer" id="lazer-musica">
+				<h2 class="lazer__titulo">Música</h2>
+				<ul class="lazer__lista">
+					<li class="lazer__item">
+						<img src="sun-icon.jpg" alt="Ícone representando musica" class="lazer__icone">
+						<p class="lazer__nome">Guitarras</p>
+					</li>
+				</ul>
+			</section>
+			<section class="lazer" id="lazer-bike">
+				<h2 class="lazer__titulo">Bike</h2>
+				<ul class="lazer__lista">
+					<li class="lazer__item">
+						<img src="sun-icon.jpg" alt="Ícone representando Bike" class="lazer__icone">
+						<p class="lazer__nome">Bike</p>
+					</li>
+				</ul>
+			</section>
+			<section class="lazer" id="lazer-filmes">
+				<h2 class="lazer__titulo">Filmes e Séries</h2>
+				<ul class="lazer__lista">
+					<li class="lazer__item">
+						<img src="sun-icon.jpg" alt="Ícone representando Filmes e Séries" class="lazer__icone">
+						<p class="lazer__nome">Filmes e Séries</p>
+					</li>
+				</ul>
+			</section>
+		</div>	
 
-    <!--Seção Sobre mim-->
-    <section class="sobre-mim" id="sobre-mim">
-        <h2 class="sobre-mim__titulo">Sobre min</h2>
-        <p class="sobre-mim__texto">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quis cupiditate eaque accusantium porro suscipit fugit dolores architecto pariatur! Eligendi autem adipisci, ratione fuga possimus a laboriosam natus rerum aut.</p>
+	<!--Cursos e Formação-->	
+		<div class="formacao__container"> <!--Acrescentando um classe divi para colocar os Cursos e Formações-->
+            <section class="formacao" id="formacao-fated">
+				<h2 class="formacao__titulo">Cursos e Formação</h2>
+				<ul class="formacao__lista">
+					<li class="formacao__item">
+						<div>
+							<img src="assets/sun-icon.jpg" alt="Ícone de certificado" class="formacao__icone">
+							<p class="formacao__nome">Fated | Sistemas da Informação | 2006.</p>
+					    </div>
+                   </li>
+               </ul>
+            </section>
+		
+			<section class="formacao" id="formacao-proz">
+				<h2 class="formacao__titulo">Proz Educação</h2>
+				<ul class="formacao__lista">
+					<li class="formacao__item">
+						<div>
+							<img src="assets/sun-icon.jpg" alt="Ícone de certificado" class="formacao__icone">
+							<p class="formacao__nome">Introdução a Front End | 2023</p>
+						</div>
+					</li>
+				</ul>
+			</section>
+		</div>
+			
 
-        <!--Assinatura opcional-->
-        <img src="/img/dipersan_03.jpg" alt="Assinatura">
-    </section>
+    <!--Projetos-->
+        <section class="projetos" id="projetos">
+            <h2 class="projetos__titulo">Meus Projetos</h2>
+            <div class="projetos__container">
+                <h3 class="projetos__nome">Projeto Armem Degurmerjian</h3>
+                <p class="projetos__descricao">Este projeto bla bla bla bal</p>
+            </div>
+        </section>
 
-    <!--Seção de Habilidades-->
-    <section class="habilidades" id="habilidades">
-        <h2 class="habilidades__titulo">Habilidades</h2>
-        <ul class="habilidades__lista">
-            <li class="habilidades__elemento">
-                <img class="habilidades__icone"  src="/img/html_icon.ico" alt="Html">
-                <p class="habilidades__nome"><hTMl></hTMl></p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icone"  src="/img/css_icon.png" alt="CSS">
-                <p class="habilidades__nome">CSS</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icone"  src="/img/js_icon.png" alt="JavaScript">
-                <p class="habilidades__nome">JavaScript</p>
-            </li>
-            <li class="habilidades__elemento">
-                <img class="habilidades__icone"  src="/img/azure_icon.ico" alt="Azure">
-                <p class="habilidades__nome">AZ-900 | AI-900</p>
-            </li>
-            <li class="habilidades__elemento"></li>
-                <img class="habilidades__icone"  src="/img/js_icon.png" alt="JavaScript">
-                <p class="habilidades__nome">JavaScript</p>
-            </li>
-            <li class="habilidades__elemento"></li>
-                <img class="habilidades__icone"  src="/img/js_icon.png" alt="JavaScript">
-                <p class="habilidades__nome">JavaScript</p>
-            </li>
-        </ul>
-    </section>
+    <!--Formulário de Contato-->
+        <section class="contato" id="contato">
+            <h2 class="contato__titulo">Formulário de Contato</h2>
+            <form class="contato__formulario" action="envio-de-formulario" method="post">
+                <label class="contato__label" for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label class="contato__label" for="email">Email:</label>
+                <input class="contato__input" type="email" id="email" name="email" required>
+                
+                <label class="contato__label" for="mensagem">Mensagem:</label>
+                <textarea class="contato__textarea" id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
 
-    <!--Seção de Hobbies-->
-    <section class="hobbies" id="hobbies">
-        <h2 class="hobbies__titulo">Hobbies</h2>
-        <ul class="hobbies__lista">
-            <li class="hobbies_elemento">
-                <img class="hobbies__icone" src="/img/skate_icon.png" alt="skate">
-                <p class="hobbies__nome">Skate</p>
-            </li>
-            <li class="hobbies_elemento">
-                <img class="hobbies__icone" src="/img/skate_icon.png" alt="skate">
-                <p class="hobbies__nome">Skate</p>
-            </li>
-            <li class="hobbies_elemento">
-                <img class="hobbies__icone" src="/img/skate_icon.png" alt="skate">
-                <p class="hobbies__nome">Skate</p>
-            </li>
-            <li class="hobbies_elemento">
-                <img class="hobbies__icone" src="/img/skate_icon.png" alt="skate">
-                <p class="hobbies__nome">Skate</p>
-            </li>
-            <li class="hobbies_elemento">
-                <img class="hobbies__icone" src="/img/skate_icon.png" alt="skate">
-                <p class="hobbies__nome">Skate</p>
-            </li>
-            <li class="hobbies_elemento">
-                <img class="hobbies__icone" src="/img/skate_icon.png" alt="skate">
-                <p class="hobbies__nome">Skate</p>
-            </li>
-        </ul>
-    </section>
-
-    <!--Seção Academica - Formação e cursos-->
-    <section class="formacao" id="formacao">
-        <h2 class="formacao__titulo">Formação Academicas e Cursos</h2>
-        <ul class="formacao__lista">
-            <li class="formacao__elemento">
-                <div>
-                <img  class="formacao__icone"   src="/img/fated_logo.png" alt="Fated">
-                <p class="formacao__detalhe">2006 - FATED - SP</p>
-                </div>
-            </li>
-            <li class="formacao__elemento"></li>
-                <div>
-                <img  class="formacao__icone"   src="/img/senac_logo.png" alt="Senac">
-                <p class="formacao__detalhe">2012 - Senac Itaquera - SP</p>
-                </div>
-            </li>
-            <li class="formacao__elemento"></li>
-                <div>
-                <img  class="formacao__icone"   src="/img/proz_log.png" alt="Proz Educação">
-                <p class="formacao__detalhe">2023 - Proz Educação</p>
-                </div>
-            </li>
-            <li class="formacao__elemento"></li>
-                <div>
-                <img  class="formacao__icone"   src="/img/escola_logo" alt="Escola da Núvem">
-                <p class="formacao__detalhe">2024 - Escola da Nuvem - SP</p>
-                </div>
-            </li>
-            <li class="formacao__elemento"></li>
-                <div>
-                <img  class="formacao__icone"   src="/img/alura_one_logo.png" alt="Alura">
-                <p class="formacao__detalhe">2006 - Alura</p>
-                </div>
-            </li>
-            <li class="formacao__elemento"></li>
-                <div>
-                <img  class="formacao__icone"   src="/img/senac_logo.png" alt="Senac">
-                <p class="formacao__detalhe">2019 - Senac - SP</p>
-                </div>
-            </li>
-        </ul>
-    </section>
-
-    <!--Seção de Projetos-->
-    <section class="projetos" id="projetos">
-        <h2 class="projetos__titulo">Meus Projetos</h2>
-        <div class="projetos__container">
-            <h3 class="projetos__nome"> Projeto Armen Degurmergian</h3>
-            <p class="projeto__descricao"> Este projeto teve como objetivo criar uma pagina de Front End usando html , CSS e Java Script para o Instituto Armem Degurmergian que fornece tratamentos alternativos, cursos e terapias </p>
-        </div> 
-        <div class="projetos__container"></div>
-            <h3 class="projetos__nome"> Projeto Blog Jornada Bem Estar</h3>
-            <p class="projeto__descricao"> Jornada Bem Estar é um Blog que tem o intuito de escrever sobre saúde, bem estar, exercicios fisicos, alimentação e diversos outros temas ligados a saúde fisica, mental e emocional, feito para ajudar as pessoas.</p>
-        </div>
-    </section>
-
-<!--Seção Contato-->   
-    <section class="contato" id="contato">
-        <h2 class="contato__titulo">Contato</h2>
-        <form class="contato__formulario">
-            <input class="contato__campo" type="text" placeholder="Nome">
-            <input class="contato__campo" type="email" placeholder="E-mail">
-            <textarea class="contato__campo contato__campo--textarea" placeholder="Mensagem"></textarea>
-            <button class="contato__botao" type="submit">Enviar</button>
-        </form>
-    </section>
-
- <!--Seção Rodapé-->   
-
-    <footer class="redes">
-        <p class="redes__titulo">Minhas Redes Sociais</p>
-        <a href="https://github.com/adilson-psantos/" target="_blank"></a>
-            <img class="redes__icon" src="/assets/github.png" alt="GitHub" >
-        </a>
-        <a href="https://www.linkedin.com/in/adilsonpsantos/" target="_blank">
-            <img class="redes__icon" src="//assets/linkedin.png" alt="LinkedIn" >
-        </a>
-        <a href="https://instagram.com.br/diperssan" target="_blank">
-            <img class="redes__icon"  src="/assets/instagram.png" alt="Instagran" >
-        </a>
-    </footer>
+    <!--Rodapé da Página-->
+        <footer class="rodape">
+            <div class="rodape__container">
+                <h2 class="rodape__titulo">Minhas redes sociais</h2>
+                <ul class="rodape__lista">
+                    <li class="rodape__item">
+                        <a href="https://www.github.com/adilson-psantos" target="_blank" class="rodape__link">
+                            <img src="sun-icon.jpg" alt="Github" class="rodape__icone">
+                        </a>
+                    </li>
+                    <li class="rodape__item">
+                        <a href="https://www.linkedin.com/in/adilson-psantos" target="_blank" class="rodape__link">
+                            <img src="sun-icon.jpg" alt="LinkedIn" class="rodape__icone">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <p class="rodape__assinatura">© 2024 Adilson Pereira dos Santos. Todos os direitos reservados.</p>
+        </footer>
 </body>
 </html>

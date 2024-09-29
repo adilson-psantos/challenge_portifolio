@@ -1,131 +1,393 @@
-/* ------------------------------ Seção Menu -------------------------------*/
+/* Temas */
+:root {
+    --cor-de-fundo: #acc0b7;
+    --cor-de-fundo-cabecalho:#81c7db;
+    --cor-do-texto: #000000;
+    --botao-cor-de-fundo: #007bff;
+    --botao-cor-texto: #ffffff;
+    --botao-hover-cor-de-fundo: #0056b3;
+    --rodape-cor-de-fundo: #f1f1f1;
+    --rodape-cor-texto: #000000;
+}
+
+[data-theme="dark"] {
+    --cor-de-fundo: #333333;
+    --cor-do-texto: #ffffff;
+    --botao-cor-de-fundo: #444444;
+    --botao-cor-do-texto: #ffffff;
+    --botao-hover-cor-de-fundo: #222222;
+    --rodape-cor-de-fundo: #444444;
+    --rodape-cor-de-fundo: #ffffff;
+}
+
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Raleway, sans-serif;
+    background-color: var(--cor-de-fundo);
+    color: var(--cor-do-texto);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/* Cabeçalho */
 .cabecalho {
     display: flex;
-    flex-direction: column;
-    padding: 1rem;
-    background-color: var(--cor-de-fundo-menu);
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: var(--cor-de-fundo-cabecalho);
+    color: var(--cor-do-texto);
 }
 
 .cabecalho__logo {
-    max-width: 80px; /* Ajuste para telas pequenas */
+    max-width: 100px;
 }
 
-.cabecalho__titulo {
-    font-size: 1.2rem;
+.cabecalho__navegacao {
+    display: flex;
+}
+
+.cabecalho__menu {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cabecalho__item {
+    margin-left: 20px;
+}
+
+.cabecalho__item a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+/* Estilo para o ícone de alternância de tema */
+.theme-toggle {
+    cursor: pointer;
+    max-width: 30px;
+    margin-right: 20px;
+}
+
+/* Apresentação */
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.apresentacao__foto {
+    max-width: 30%;
+    border-radius: 60%; /*Arredonda a imagem em 50 por cento*/
+}
+
+.apresentacao__titulo {
+    font-size: 1.5em;
+    margin: 10px 0;
+}
+
+.apresentacao__texto {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+/* Sobre */
+.sobre {
+    padding: 20px;
+}
+
+.sobre__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.sobre__texto {
+    font-size: 1em;
+}
+
+/* Habilidades */
+
+.habilidades__container {
+	display: flex;
+	flex-wrap:wrap;
+	gap:10px;
+}
+
+.habilidades {
+	flex:1;
+	min-width:100px;
+	padding: 20px;
+	border:1px 
+	box-sizing: border-box;
+}
+
+.habilidades__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.habilidades__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.habilidades__item {
+    margin: 10px;
     text-align: center;
 }
 
-.navegacao__lista {
+.habilidades__icone {
+    max-width: 50px;
+}
+
+.habilidades__nome {
+    margin-top: 5px;
+}
+
+/* Lazer */
+
+.lazer__container {
+	display:flex;
+	flex-wrap: wrap;/*Permite que as seções se ajustem em telas menores*/
+	gap:10px /*Espaço entre as seções*/
+}
+.lazer {
+	flex: 1;
+	min-width:200px; /*Garante que as seções não fiquem muito pequenas*/
+    padding: 10px;
+	border:1px solid:#000;
+	box-sizing:border-box; /* Incluir padding e border  no tamanho  total da seção */
+}
+
+.lazer__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.lazer__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.lazer__item {
+    margin: 10px;
+    text-align: center;
+}
+
+.lazer__icone {
+    max-width: 50px;
+}
+
+.lazer__nome {
+    margin-top: 5px;
+}
+
+/* Formação */
+
+.formacao__container {
+	display:flex;
+	flex-wrap: wrap;/*Permite que as seções se ajustem em telas menores*/
+	gap:10px /*Espaço entre as seções*/
+}	
+
+.formacao {
+	flex: 1;
+	min-width:200px; /*Garante que as seções não fiquem muito pequenas*/
+    padding: 20px;
+	border:1px solid:#000;
+	box-sizing:border-box; /* Incluir padding e border  no tamanho  total da seção */
+    padding: 20px;
+}
+
+.formacao__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.formacao__lista {
+    list-style: none;
+    padding: 0;
+}
+
+.formacao__item {
+    margin: 10px 0;
     display: flex;
     align-items: center;
 }
 
-.navegacao__elemento a {
-    font-size: 0.10rem;
-}
-/* ------------------------------ Seção Apresentação ------------------------------*/
-.apresentacao {
-    display: flex;
-    
+.formacao__icone {
+    max-width: 50px;
+    margin-right: 10px;
 }
 
-.apresentacao__foto {
-    display: flex;
-    border-radius: 5px;
+.formacao__nome {
+    font-size: 1em;
 }
 
-.apresentacao__container {
+/* Projetos */
+.projetos {
+    padding: 20px;
+}
+
+.projetos__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.projetos__container {
+    margin: 10px 0;
+}
+
+.projetos__nome {
+    font-size: 1.2em;
+    margin-bottom: 5px;
+}
+
+.projetos__descricao {
+    font-size: 1em;
+}
+
+/* Contato */
+.contato {
+    padding: 20px;
+}
+
+.contato__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.contato__formulario {
     display: flex;
     flex-direction: column;
 }
 
-.redes {
-    display: flex;
-    flex-direction:initial;
+.contato__label {
+    margin: 10px 0 5px;
 }
 
-/* ------------------------------ Seção Sobre mim ----------------------------------*/
+.contato__input, .contato__textarea {
+    padding: 10px;
+    font-size: 1em;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
 
+button {
+    padding: 10px;
+    font-size: 1em;
+    background-color: var(--button-background-color);
+    color: var(--button-text-color);
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
-/*------------------------------ Seção de Habilidades ------------------------------*/
+button:hover {
+    background-color: var(--button-hover-background-color);
+}
 
-
-/*------------------------------ Seção de Hobbies --------------------------------*/
-
-
-/*------------------------------ Seção de Projetos --------------------------------*/
-
-
-/*------------------------------ Seção de Contato ---------------------------------*/
-
-
-
-/*------------------------------ Seção de Rodapé-----------------------------------*/
-
-.redes {
+/* Rodapé */
+.rodape {
+    background-color: var(--footer-background-color);
+    color: var(--footer-text-color);
+    padding: 20px;
     text-align: center;
-    padding: 5px;
-    background-color: rgba(140, 187, 214, 0.7);
-    color: rgb(15, 15, 15);
-    width: 100%;
+}
+
+.rodape__container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.rodape__titulo {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.rodape__lista {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.rodape__item {
+    margin: 10px;
+}
+
+.rodape__link {
+    text-decoration: none;
+    color: var(--footer-text-color);
+}
+
+.rodape__icone {
+    max-width: 30px;
+}
+
+.rodape__assinatura {
+    margin-top: 20px;
     font-size: 0.9em;
 }
-.redes__titulo {
-    color: #fff;
-    text-decoration: none;
-}
 
-.redes__icon {
-    width: 30px; /* Tamanho dos ícones */
-    height: 30px;
-    margin: 0 10px;
-    vertical-align: middle; /* Alinha o ícone verticalmente com o texto */
-}
-
-.redes__titulo:hover {
-    opacity: 0.8; /* Efeito hover para ícones */
-}
-
-
-
-/* ------------------------------ Responsividade ---------------------------------------*/
-
-/* Tablets e telas maiores */
-@media (min-width: 768px) {
+/* Responsividade */
+@media (max-width: 768px) {
     .cabecalho {
-        flex-direction: row;
-        justify-content: space-between;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho__menu {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .cabecalho__item {
+        margin: 10px 0;
+    }
+
+    .apresentacao {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .habilidades__lista, .lazer__lista {
+        flex-direction: column;
         align-items: center;
     }
 
-    .cabecalho__logo {
-        max-width: 100px;
+    .rodape__lista {
+        flex-direction: column;
+        align-items: center;
     }
 
-    .cabecalho__titulo {
-        font-size: 1.5rem;
-    }
-
-    .navegacao__lista {
-        display: flex;
-        flex-direction: row;
-        gap: 1rem;
-        margin-top: 0;
-    }
-
-    .navegacao__elemento a {
-        font-size: 1rem;
+    .rodape__item {
+        margin: 5px 0;
     }
 }
 
-/* Telas grandes */
-@media (min-width: 1024px) {
-    /* Aqui você pode ajustar ainda mais o design para telas grandes */
-    .cabecalho__titulo {
-        font-size: 1.8rem;
-    }
 
-    .navegacao__elemento a {
-        font-size: 1.1rem;
-    }
+/* Acessibilidade */
+button, a {
+    cursor: pointer;
+}
+
+button:focus, a:focus {
+    outline: 2px solid #0000ff;
 }
