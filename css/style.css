@@ -95,17 +95,17 @@ body {
 /* Apresentação */
 .apresentacao {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    text-align: center;
+    justify-content: space-between;
     padding: 20px;
+    background-color: var(--cor-de-fundo); /*Cor de fundo para a Apresentação*/
 }
 
 .apresentacao__foto {
-    max-width: 30%;
-    border-radius: 60%; /*Arredonda a imagem em 50 por cento*/
+    max-width: 40%; /*Ajusta a largura da imagem conforme necessário*/
+    height: auto; /*mantem a proporção da imagem*/
+    border-radius: 40%; /*Bordas arredondada para a imagem*/
 }
-
 .apresentacao__titulo {
     font-size: 1.5em;
     margin: 10px 0;
@@ -379,9 +379,17 @@ button:hover {
         margin: 10px 0;
     }
 
+    .apresentacao__container {
+        max-width: 100%; /*Texto ocupa toda a largura no mobile*/
+    }
     .apresentacao {
-        flex-direction: column;
-        text-align: center;
+        flex-direction: column; /*Coloca a imagem e o texto em uma coluna no mobile*/
+        text-align: center; /*Centraliza o texto no mobile*/
+    }
+
+    .apresentacao__foto {
+        max-width: 80%;
+        margin-bottom: 20px; /*Espaçamento entre a imagem e o texto no mobile*/
     }
 
     .habilidades__lista, .lazer__lista {
