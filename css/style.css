@@ -1,21 +1,23 @@
 /* Temas */
 :root {
-    --cor-de-fundo: #acc0b7;
-    --cor-de-fundo-cabecalho:#acc0b7;
-    --cor-do-texto: #000000;
+    --cor-de-fundo: #f1f1f1  ;
+    --cor-de-fundo-cabecalho:#f1f1f1;
+    --cor-do-texto: #1C1C1C;
+    --cor-do-fundo-links:#ADD8E6;
+    --cor-do-texto-links:#1C1C1C;
     --botao-cor-de-fundo: #007bff;
     --botao-cor-texto: #ffffff;
-    --botao-hover-cor-de-fundo: #0056b3;
+    --botao-hover-cor-de-fundo: #00060c;
     --rodape-cor-de-fundo: #f1f1f1;
-    --rodape-cor-texto: #000000;
+    --rodape-cor-texto: #1C1C1C;
 }
 
 [data-theme="dark"] {
-    --cor-de-fundo: #333333;
-    --cor-do-texto: #ffffff;
-    --botao-cor-de-fundo: #444444;
+    --cor-de-fundo: #ffffff;
+    --cor-do-texto: #333333;
+    --botao-cor-de-fundo: #007bff;
     --botao-cor-do-texto: #ffffff;
-    --botao-hover-cor-de-fundo: #222222;
+    --botao-hover-cor-de-fundo: #FFFFE0;
     --rodape-cor-de-fundo: #444444;
     --rodape-cor-de-fundo: #ffffff;
 }
@@ -37,10 +39,16 @@ body {
 /* Cabeçalho */
 .cabecalho {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 10px 20px;
-    background-color: var(--cor-de-fundo-cabecalho);
+    justify-content: space-between;    
+    padding: 20px;
+    background-color: var(--cor-de-fundo-cabecalho); /*cor de fundo cabeçalho*/
+    color: var(--cor-do-texto);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Sombra Sutil*/
+}
+
+.cabecalho__titulo {
+    font-size: 24px;
     color: var(--cor-do-texto);
 }
 
@@ -49,24 +57,33 @@ body {
 }
 
 .cabecalho__navegacao {
-    display: flex;
+        display: flex; /*Alinha os itens horizontalmente*/    
 }
 
 .cabecalho__menu {
-    display: flex;
-    list-style: none;
+    display: flex; /*alinha os itens horizontalmente*/
+    list-style: none; /*Reove os marcadores padrão da lista*/
     padding: 0;
     margin: 0;
 }
 
 .cabecalho__item {
-    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.cabecalho__item:last-child{
+    margin-right:0;
 }
 
 .cabecalho__item a {
-    text-decoration: none;
-    color: var(--text-color);
-}
+    display: block;
+    padding: 10px 20px; /* Espaçamento interno */
+    background-color:var(--cor-do-fundo-links); /* Cor de fundo dos links */
+    color:var(--cor-do-texto-links); /* Cor do texto */
+    text-decoration: none; /* Remove o sublinhado */
+    border-radius: 8px; /* Bordas arredondadas */
+    transition: background-color 0.3s ease, transform 0.2s ease; /* Efeitos de transição */
+  }
 
 /* Estilo para o ícone de alternância de tema */
 .theme-toggle {
@@ -291,21 +308,21 @@ body {
 button {
     padding: 10px;
     font-size: 1em;
-    background-color: var(--button-background-color);
-    color: var(--button-text-color);
+    background-color: var(--botao-cor-de-fundo);
+    color: var(--botao-cor-do-texto);
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
 button:hover {
-    background-color: var(--button-hover-background-color);
+    background-color: var(--botao-hover-cor-de-fundo);
 }
 
 /* Rodapé */
 .rodape {
-    background-color: var(--footer-background-color);
-    color: var(--footer-text-color);
+    background-color: var(--rodape-cor-de-fundo);
+    color: var(--rodape-cor-texto);
     padding: 20px;
     text-align: center;
 }
@@ -334,7 +351,7 @@ button:hover {
 
 .rodape__link {
     text-decoration: none;
-    color: var(--footer-text-color);
+    color: var(--rodape-cor-texto);
 }
 
 .rodape__icone {
