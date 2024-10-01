@@ -132,6 +132,16 @@ body {
 
 /* Habilidades */
 
+.habilidades__titulo {    
+    display: flex;
+    align-items: center;
+    justify-content: space-between;    
+    padding: 20px;
+    background-color: var(--cor-de-fundo-cabecalho); /*cor de fundo cabeçalho*/
+    color: var(--cor-do-texto);
+     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Sombra Sutil*/    
+}
+
 .habilidades {
     text-align: center;
     margin: 20px;
@@ -159,7 +169,6 @@ body {
     background-color: #f5f5f5; /*cor de fundoda seção habilidade*/
     border-radius: 10px;
 }
-
 /* Estilo para Cada item de Habilidade*/
 .habilidades__item {
     background-color: #e0f7fa;
@@ -175,7 +184,6 @@ body {
 .habilidades:hover {
     transform: scale(1.05); /*Efeito de zoom ao passar o mouse*/
 }
-
 /* Titulo da Habilidade*/
 .habilidades__container {
     display: flex;
@@ -194,7 +202,7 @@ body {
 }
 
 .habilidades__subtitulo {
-    font-size: 20px;
+    font-size: 18px;
     color:#ffffff; /*Cor do texto*/
     background-color: #00796b; /*Cor de Fundo do titulo*/
     padding: 10px;
@@ -296,7 +304,7 @@ display: flex;
 }
 
 .perfil__git__subtitulo {
-    font-size: 20px;
+    font-size: 18px;
     color:#ffffff; /*Cor do texto*/
     background-color: #00796b; /*Cor de Fundo do titulo*/
     padding: 10px;
@@ -326,7 +334,7 @@ display: flex;
     margin-bottom: 10px;
 }
 
-/*Nome da Habilidade*/
+/*Nome do Perfil Git*/
 
 .perfil__git__nome {
     font-size: 18px;
@@ -364,7 +372,7 @@ display: flex;
     border-radius: 10px;
 }
 
-/* Estilo para Cada item de Habilidade*/
+/* Estilo para Cada item de Lazer*/
 .lazer__item {
     background-color: #e0f7fa;
     border: 2px solid #00796b;
@@ -380,7 +388,7 @@ display: flex;
     transform: scale(1.05); /*Efeito de zoom ao passar o mouse*/
 }
 
-/* Titulo da Habilidade*/
+/* Titulo da Lazer*/
 .lazer__container {
     display: flex;
     flex-wrap:wrap; /*Permite que as seções querem linha em telas menores*/
@@ -398,7 +406,7 @@ display: flex;
 }
 
 .lazer__subtitulo {
-    font-size: 20px;
+    font-size: 18px;
     color:#ffffff; /*Cor do texto*/
     background-color: #00796b; /*Cor de Fundo do titulo*/
     padding: 10px;
@@ -428,7 +436,7 @@ display: flex;
     margin-bottom: 10px;
 }
 
-/*Nome da Habilidade*/
+/*Nome do Lazer*/
 
 .lazer__nome {
     font-size: 18px;
@@ -495,12 +503,12 @@ display: flex;
     border: 2px solid #00796b; /*Borda das seções*/
     border-radius: 10px; /*Bordas arredondadas*/
     padding: 20px;
-    width: 300px; /*Largura fixa para cada seção*/
+    width: 250px; /*Largura fixa para cada seção*/
     box-shadow: 0 4px 8px rgb(0, 0, 0, 02); /*Sombra mais intensa no hover */
 }
 
 .formacao__subtitulo {
-    font-size: 20px;
+    font-size: 18px;
     color:#ffffff; /*Cor do texto*/
     background-color: #00796b; /*Cor de Fundo do titulo*/
     padding: 10px;
@@ -533,7 +541,7 @@ display: flex;
 /*Nome da formacao*/
 
 .formacao__nome {
-    font-size: 18px;
+    font-size: 16px;
     color: #00796b;
     font-weight: bold;
 }
