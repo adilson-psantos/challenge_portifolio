@@ -366,11 +366,7 @@ display: flex;
     justify-content: center; /*Centraliza as seções horizontalmente*/
     gap: 10px;
 }
-
-.lazer {
-    
-}
-
+/*lazer subtitulo*/
 .lazer__subtitulo {
     font-size: 18px;
     color:#ffffff; /*Cor do texto*/
