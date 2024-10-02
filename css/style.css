@@ -348,28 +348,21 @@ display: flex;
     text-align: center;
     margin: 20px;
     padding: 20px;
-    background-color: var(--cor-de-fundo); /*cor de fundo das seções*/
     border: 2px solid #00796b; /*Borda em volta das seções*/
     border-radius: 10px;
-    width: 300px; /*Largura fixa para as seções*/
+    width: 350px; /*Largura fixa para as seções*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Sombra para dar profundidade*/
     transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
+    background-color: #f5f5f5; /*cor de fundoda seção */
+   
 }
 
 .lazer:hover {
     transform: scale(1.05); /*Leve efeito de zoom ao passar o mouse*/
-}
-
-/*Titulo de cada Seção*/
-
-.lazer {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
-    background-color: #f5f5f5; /*cor de fundoda seção habilidade*/
-    border-radius: 10px;
 }
 
 /* Estilo para Cada item de Lazer*/
@@ -379,7 +372,7 @@ display: flex;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    width: 100px; /*Tamanho fixo para manter a proporção*/
+    width: 150px; /*Tamanho fixo para manter a proporção*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -464,24 +457,36 @@ display: flex;
 
 /*Titulo de cada Seção*/
 
+.formacao:hover {
+    transform: scale(1.05); /*Leve efeito de zoom ao passar o mouse*/
+}
+
+/*Titulo de cada Seção*/
+
 .formacao {
     display: flex;
     justify-content: center;
     gap: 20px;
     padding: 20px;
     flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
-    background-color: #f5f5f5; /*cor de fundoda seção formacao*/
     border-radius: 10px;
+    background-color: #ffffff; /*Cor de fundo das seções*/
+    border: 2px solid #00796b; /*Borda das seções*/
+    border-radius: 10px; /*Bordas arredondadas*/
+    padding: 10px;
+    width: 220px; /*Largura fixa para cada seção*/
+    box-shadow: 0 4px 8px rgb(0, 0, 0, 02); /*Sombra mais intensa no hover */
 }
 
 /* Estilo para Cada item de formacao*/
+
 .formacao__item {
     background-color: #e0f7fa;
     border: 2px solid #00796b;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    width: 150px; /*Tamanho fixo para manter a proporção*/
+    width: 180px; /*Tamanho fixo para manter a proporção*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
 }
@@ -491,20 +496,12 @@ display: flex;
 }
 
 /* Titulo da formacao*/
+
 .formacao__container {
     display: flex;
     flex-wrap:wrap; /*Permite que as seções querem linha em telas menores*/
     justify-content: center; /*Centraliza as seções horizontalmente*/
     gap: 10px;
-}
-
-.formacao {
-    background-color: #ffffff; /*Cor de fundo das seções*/
-    border: 2px solid #00796b; /*Borda das seções*/
-    border-radius: 10px; /*Bordas arredondadas*/
-    padding: 20px;
-    width: 250px; /*Largura fixa para cada seção*/
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 02); /*Sombra mais intensa no hover */
 }
 
 .formacao__subtitulo {
@@ -538,36 +535,101 @@ display: flex;
     margin-bottom: 10px;
 }
 
-/*Nome da formacao*/
+/*Nome do formacao*/
 
 .formacao__nome {
-    font-size: 16px;
+    font-size: 18px;
     color: #00796b;
     font-weight: bold;
 }
 
-/* Projetos */
+
+/* projetos */
+
 .projetos {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
     padding: 20px;
+    flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
+    background-color: #f5f5f5; /*cor de fundoda seção habilidade*/
+    border-radius: 10px;
+    text-align: center;
+    margin: 20px;
+    border: 2px solid #00796b; /*Borda em volta das seções*/
+    width: 1500px; /*Largura fixa para as seções*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Sombra para dar profundidade*/
+    transition: transform 0.3s ease;
 }
 
-.projetos__titulo {
-    font-size: 1.5em;
+.projetos:hover {
+    transform: scale(1.05); /*Leve efeito de zoom ao passar o mouse*/
+}
+
+/* Estilo para Cada item de projetos*/
+.projetos__item {
+    background-color: #e0f7fa;
+    border: 2px solid #00796b;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    width: 1100px; /*Tamanho fixo para manter a proporção*/
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.projetos:hover {
+    transform: scale(1.05); /*Efeito de zoom ao passar o mouse*/
+}
+
+/* Titulo da projetos*/
+
+.projetos__container {
+    display: flex;
+    flex-wrap:wrap; /*Permite que as seções querem linha em telas menores*/
+    justify-content: center; /*Centraliza as seções horizontalmente*/
+    gap: 10px;
+}
+
+.projetos__subtitulo {
+    font-size: 18px;
+    color:#ffffff; /*Cor do texto*/
+    background-color: #00796b; /*Cor de Fundo do titulo*/
+    padding: 10px;
+    border-radius: 5px; /*Bordas arredondadas no titulo*/
+    margin-bottom: 10px; /*Espaçamento abaixo do titulo*/
+    border: 1px solid #005a4f;/*Borda Adcional para destaque*/
+    text-align: center; /*Centraliza o texto*/
+}
+
+/* Lista de projetos*/
+
+.projetos__lista {
+    list-style: none; /*Remove marcadores*/ 
+    padding: 0;
+    margin: 0;
+}
+
+.projetos__item {
+display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.projetos__icone {
+    width: 50px;
+    height: 50px;
     margin-bottom: 10px;
 }
 
-.projetos__container {
-    margin: 10px 0;
-}
+/*Nome do projetos*/
 
 .projetos__nome {
-    font-size: 1.2em;
-    margin-bottom: 5px;
+    font-size: 18px;
+    color: #00796b;
+    font-weight: bold;
 }
 
-.projetos__descricao {
-    font-size: 1em;
-}
 
 /* Contato */
 .contato {
