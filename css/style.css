@@ -37,6 +37,7 @@ body {
 }
 
 /* Cabeçalho */
+
 .cabecalho {
     display: flex;
     align-items: center;
@@ -86,6 +87,7 @@ body {
   }
 
 /* Estilo para o ícone de alternância de tema */
+
 .theme-toggle {
     cursor: pointer;
     max-width: 30px;
@@ -93,6 +95,7 @@ body {
 }
 
 /* Apresentação */
+
 .apresentacao {
     display: flex;
     align-items: center;
@@ -116,7 +119,8 @@ body {
     margin: 10px 0;
 }
 
-/* Sobre */
+/* Sobre Mim */
+
 .sobre {
     padding: 20px;
 }
@@ -130,110 +134,95 @@ body {
     font-size: 1em;
 }
 
-/* Habilidades */
+/* Título das Habilidades */
 
 .habilidades__titulo {    
     display: flex;
     align-items: center;
     justify-content: space-between;    
     padding: 20px;
-    background-color: var(--cor-de-fundo-cabecalho); /*cor de fundo cabeçalho*/
+    background-color: var(--cor-de-fundo-cabecalho); /* Cor de fundo do cabeçalho */
     color: var(--cor-do-texto);
-     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /*Sombra Sutil*/    
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */    
 }
 
+/* Container Principal das Habilidades */
+.habilidades__container {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as seções quebrem linha em telas menores */
+    justify-content: center; /* Centraliza as seções horizontalmente */
+    gap: 10px;
+}
+
+/* Seções de Habilidades */
+
 .habilidades {
-    text-align: center;
-    margin: 20px;
-    padding: 20px;
-    background-color: var(--cor-de-fundo); /*cor de fundo das seções*/
-    border: 2px solid #00796b; /*Borda em volta das seções*/
-    border-radius: 10px;
-    width: 300px; /*Largura fixa para as seções*/
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Sombra para dar profundidade*/
+    background-color: #ffffff; /* Cor de fundo das seções */
+    border: 2px solid #00796b; /* Borda das seções */
+    border-radius: 10px; /* Bordas arredondadas */
+    padding: 10px;
+    width: 180px; /* Largura fixa para cada seção */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
     transition: transform 0.3s ease;
 }
 
 .habilidades:hover {
-    transform: scale(1.05); /*Leve efeito de zoom ao passar o mouse*/
+    transform: scale(1.05); /* Leve efeito de zoom ao passar o mouse */
 }
 
-/*Titulo de cada Seção*/
+/* Subtítulo das Habilidades */
 
-.habilidades {
+.habilidades__subtitulo {
+    font-size: 18px;
+    color: #ffffff; /* Cor do texto */
+    background-color: #00796b; /* Cor de fundo do título */
+    padding: 10px;
+    border-radius: 5px; /* Bordas arredondadas no título */
+    margin-bottom: 10px; /* Espaçamento abaixo do título */
+    border: 1px solid #005a4f; /* Borda adicional para destaque */
+    text-align: center; /* Centraliza o texto */
+}
+
+/* Lista de Habilidades */
+
+.habilidades__lista {
+    list-style: none; /* Remove marcadores */ 
+    padding: 0;
+    margin: 0;
     display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
-    background-color: #f5f5f5; /*cor de fundoda seção habilidade*/
-    border-radius: 10px;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px; /* Espaçamento entre itens */
 }
-/* Estilo para Cada item de Habilidade*/
+
+/* Item de Habilidade */
+
 .habilidades__item {
     background-color: #e0f7fa;
     border: 2px solid #00796b;
     padding: 10px;
     border-radius: 10px;
     text-align: center;
-    width: 100px; /*Tamanho fixo para manter a proporção*/
+    width: 100px; /* Tamanho fixo para manter a proporção */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.3s ease;
-}
-
-.habilidades:hover {
-    transform: scale(1.05); /*Efeito de zoom ao passar o mouse*/
-}
-/* Titulo da Habilidade*/
-.habilidades__container {
     display: flex;
-    flex-wrap:wrap; /*Permite que as seções querem linha em telas menores*/
-    justify-content: center; /*Centraliza as seções horizontalmente*/
-    gap: 10px;
+    flex-direction: column;
+    align-items: center;
 }
 
-.habilidades {
-    background-color: #ffffff; /*Cor de fundo das seções*/
-    border: 2px solid #00796b; /*Borda das seções*/
-    border-radius: 10px; /*Bordas arredondadas*/
-    padding: 10px;
-    width: 180px; /*Largura fixa para cada seção*/
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 02); /*Sombra mais intensa no hover */
+.habilidades__item:hover {
+    transform: scale(1.05); /* Efeito de zoom no item */
 }
 
-.habilidades__subtitulo {
-    font-size: 18px;
-    color:#ffffff; /*Cor do texto*/
-    background-color: #00796b; /*Cor de Fundo do titulo*/
-    padding: 10px;
-    border-radius: 5px; /*Bordas arredondadas no titulo*/
-    margin-bottom: 10px; /*Espaçamento abaixo do titulo*/
-    border: 1px solid #005a4f;/*Borda Adcional para destaque*/
-    text-align: center; /*Centraliza o texto*/
-}
-
-/* Lista de Habilidades*/
-
-.habilidades__lista {
-    list-style: none; /*Remove marcadores*/ 
-    padding: 0;
-    margin: 0;
-}
-
-.habilidades__item {
-display: flex;
-   flex-direction: column;
-   align-items: center;
-}
-
+/* Ícone da Habilidade */
 .habilidades__icone {
     width: 50px;
     height: 50px;
     margin-bottom: 10px;
 }
 
-/*Nome da Habilidade*/
-
+/* Nome da Habilidade */
 .habilidades__nome {
     font-size: 18px;
     color: #00796b;
@@ -246,29 +235,23 @@ display: flex;
     text-align: center;
     margin: 20px;
     padding: 20px;
-    background-color: var(--cor-de-fundo); /*cor de fundo das seções*/
     border: 2px solid #00796b; /*Borda em volta das seções*/
-    border-radius: 10px;
-    width: 300px; /*Largura fixa para as seções*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Sombra para dar profundidade*/
     transition: transform 0.3s ease;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
+    background-color: #f5f5f5; /*cor de fundoda seção */
+    border-radius: 10px; /*Bordas arredondadas*/
+    width: 800px; /*Largura fixa para cada seção*/
+   
 }
 
 .perfil__git:hover {
     transform: scale(1.05); /*Leve efeito de zoom ao passar o mouse*/
 }
 
-/*Titulo de cada Seção*/
-
-.perfil__git {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 20px;
-    flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
-    background-color: #f5f5f5; /*cor de fundoda seção habilidade*/
-    border-radius: 10px;
-}
 
 /* Estilo para Cada Item Perfil Git*/
 .perfil__git__item {
@@ -287,6 +270,7 @@ display: flex;
 }
 
 /* Titulo da Perfil Git*/
+
 .perfil__git__container {
     display: flex;
     flex-wrap:wrap; /*Permite que as seções querem linha em telas menores*/
@@ -294,14 +278,7 @@ display: flex;
     gap: 10px;
 }
 
-.perfil__git {
-    background-color: #ffffff; /*Cor de fundo das seções*/
-    border: 2px solid #00796b; /*Borda das seções*/
-    border-radius: 10px; /*Bordas arredondadas*/
-    padding: 10px;
-    width: 800px; /*Largura fixa para cada seção*/
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 02); /*Sombra mais intensa no hover */
-}
+/* Subtitulo */
 
 .perfil__git__subtitulo {
     font-size: 18px;
@@ -350,14 +327,15 @@ display: flex;
     padding: 20px;
     border: 2px solid #00796b; /*Borda em volta das seções*/
     border-radius: 10px;
-    width: 350px; /*Largura fixa para as seções*/
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /*Sombra para dar profundidade*/
     transition: transform 0.3s ease;
     display: flex;
     justify-content: center;
     gap: 20px;
     flex-wrap: wrap; /*Permitir quebra de linha em telas menores*/
-    background-color: #f5f5f5; /*cor de fundoda seção */
+    border-radius: 10px; /*Bordas arredondadas*/
+    width: 180px; /*Largura fixa para cada seção*/
+    
    
 }
 
@@ -390,12 +368,7 @@ display: flex;
 }
 
 .lazer {
-    background-color: #ffffff; /*Cor de fundo das seções*/
-    border: 2px solid #00796b; /*Borda das seções*/
-    border-radius: 10px; /*Bordas arredondadas*/
-    padding: 10px;
-    width: 180px; /*Largura fixa para cada seção*/
-    box-shadow: 0 4px 8px rgb(0, 0, 0, 02); /*Sombra mais intensa no hover */
+    
 }
 
 .lazer__subtitulo {
